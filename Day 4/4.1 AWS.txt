@@ -1,0 +1,28 @@
+Differences b/w Cloud & Physical
+Cloud:-
+ECU(Electronic Control Unit)
+EBS(Elastic Block Storage)
+AMI(Amazon Machine Image)		-> Does not have to install
+Autoset
+EC2 - Elastic Compute Cloud -> It is a product in which Every Cloud feature is included
+
+Physical:-
+RAM & CPU
+HDD
+ISO/CD/DVD
+Username & Password
+
+
+Protocol:- Way of Connection; How it is communicating
+Amazon Cloud uses RDP(Remote Desktop Protocol) for access the Windows.
+Amazon Cloud uses SSH(Secure Shell) for access the Linux.
+
+
+mstsc - Microsoft Terminal Service; for windows
+
+Putty and PuttyGen is needed for using AWS in Windows for Linux OS(SSH).
+
+PuttyGen convert .pem file .ppk
+Putty understands only .ppk file
+Putty is a Client
+SSH is a server

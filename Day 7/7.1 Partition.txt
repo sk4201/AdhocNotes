@@ -1,0 +1,52 @@
+If bydefault BIOS is opening in starting of Lapptop then it has MBR Partition
+and UEFI -> GPT
+
+=> lsblk                    -> List Block Devices [Partitions]
+
+=> fdisk -l                    -> no. of harddisk attached in Linux
+=> fdisk -l /dev/xvda
+
+Smallest space in a harddisk is Sector i.e., 1 Sector = 512 Bytes
+Never ever delete or format extended partition
+
+[whole partition 30 MARKS]
+Create Partitions:-
+
+=> fdisk /dev/xvdf              -> entered into harddisk
+=> print or p                   -> to check if there are partitions in this harddisk
+=> new or n                     -> to create a new partition
+=> wq or w                      -> saves all the process
+=> q                            -> quits the whole process
+
+Format that partition:- (NTFS - Format of Windows) (HFS+ or HPFS - Format of MAC) (XFS - Format of Redhat)
+                        FAT or vfat is universal format for all OS
+
+=> mkfs.xfs /dev/xvdf1          -> make file system; format the partition
+
+=> mkfs. [tab tab]              -> shows all the supported format
+
+=> df                           -> shows all the system disk usage of OS
+
+Mount:- Create a folder and map/link the partition
+
+In Linux, there is a directory i.e., /mnt where the external devices are mounted
+
+mkdir /mnt/mypart
+mount /dev/xvdf1 /mnt/mypart    -> mount the partition in /mnt/mypart
+
+=> df                           -> shows the details and path where we have mounted the partition
+=> df -h                        -> Human readable Format
+=> df -hT                       -> Human readable and shows the format type info of partitions 
+
+if we mount in /media, icon will be shown
+
+for permananting the mounting storage go to /etc/fstab and add:- 
+/dev/xvdf1 /mnt/mypart xfs  
+
+=> mount -a                        -> for confirming that mounting is done successfully by the command
+
+
+
+
+
+

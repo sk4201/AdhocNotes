@@ -1,0 +1,15 @@
+Noncoder
+Python
+Specialization_name
+Project
+
+1024:60000
+
+/dev/null			-> if you want to send output to nowhere; black box
+
+crontab -u adhoc -e		-> /etc/crontab; u adhoc=user; e=editor		=> job scheduling
+
+watch date		-> watch the real time date
+
+
+

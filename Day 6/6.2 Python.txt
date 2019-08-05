@@ -1,0 +1,57 @@
+for i in "hello"                -> check the length of 'hello'
+print "ok google"
+=> ok google
+ok google
+ok google
+ok google
+ok google
+
+for i in "hello"
+print(i)
+=>h 
+e
+l
+l
+o 
+
+for i in range(10)
+print(i)
+=>0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+x=[0,1,2,3,4,5,6,7,8,9]
+for i in x:
+print(i)
+=>0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+import webbrowser
+li=["https://www.google.com","https://github.com"]
+number=[3,5,6,7]
+sum=0
+for i in number:
+    sum=sum+i 
+    print(sum)
+=> 21
+
+for iteration
+start hotspot ---
+find number of device connected from your hotspot 
+
+

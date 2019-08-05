@@ -1,0 +1,100 @@
+beautifulsoup4          -> Web Scraping
+google-search
+sudo pip3 install google
+
+Problem 2.1
+
+Python code:-
+
+#!/usr/bin/python3
+import time
+from googlesearch import search
+web=input("plz enter topic")
+# now time for search
+url=[]
+for i in search(web,stop=10):
+    print(i) 
+    # i will only print URL
+    time.sleep(1)
+url.append(i) 
+print(url) 
+
+File Handling:-
+File/Directory Handling:
+1) create, delete, rename, store, permission, cp, cut, 
+2) File handling
+
+1)
+code for seeing where are the time word coming:
+for i in dir(time) : 
+    print(i) 
+    time.sleep(1) 
+
+code:
+import time
+for i in dir(time) :
+if 'time' in i:
+    print(i)
+
+code:
+x=[]
+
+for i in dir(time):
+    if 'time' in i:
+        x.appenf(i)
+
+code(short form of upper code):
+[i for i in dir(time) if 'time' in i]
+
+2)
+
+permission
+read
+create
+remove
+append
+write
+delete
+
+code:
+# creating a File
+f=open('hello.txt','w') # w=write mode(create and if exist, then overwrite); we cannot read in write mode
+f.write("hello world) # types the data in body of file
+f.write("/n") # next line
+f.write("this is file writer") # new line
+f.close()
+
+# read operation
+f=open('hello.txt','r') # r=read mode; we cannot write in read mode
+data=f.read() 
+print(data) 
+f.close()
+
+# read and write both w+; drawback is it will always create a file first
+f=open('hello.txt','w+') # this will create a file first
+f.write("hiii")
+f.write('\n')
+f.write("ok")
+f.seek(0) # shifts the cursor to first position
+print(f.read())
+f.close() 
+
+# read and write both r+; remove the drawbacks of w+
+f=open('hello.txt','r+') # this will create a file first
+f.write("hiii")
+f.write('\n')
+f.write("ok")
+f.seek(0) # shifts the cursor to first position
+print(f.read())
+f.close()
+
+# append a 
+f=open('hello.txt','a') # a= append
+f.write("hiii")
+f.close
+
+
+
+
+
+

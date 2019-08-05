@@ -1,0 +1,62 @@
+Most recently highest paid languages:-
+
+Python
+Node
+Go
+R
+Scala
+Java
+
+Python
+
+All Technology Integeration
+	Pi(Miu(Python)
+	Webapp(Django,flask,...)
+	Database
+	AI language
+	OS all work
+	Network Programming
+	Bigdata
+	Cloud Computing
+	.Net-> Ironpython
+	Java-> Jython
+
+1st in usage in world -> JavaScript
+2nd in usage in world -> Python
+
+C -> Code - Compile - Run
+Python -> Code - Run	[Interepreter Language]
+
+=>2*"hi"				-> Prints 'hihi'
+"hello"+"hi"			-> Prints 'hellohi'
+
+=>x=10
+y=20
+x+y				-> Prints 30
+=>x,y=y,x				-> Swap Value
+x				-> 20
+y				-> 10
+
+=>x=10
+y=3.5
+z="hi"
+=>type(x)				-> shows the data type of x
+
+Python does'nt take extra memory if the value is same but variable is different
+
+=>x=20
+=>id(x)				-> shows the memory id of x or 20
+
+Datatypes:-
+
+Immutable
+
+Cannot change the memory id of x=10 to x=20	-> int, float, string, byte, tuple
+
+Mutable
+
+Can change the memory id 	-> list, set, dictionary
+
+
+80% approx data is in string in world
+

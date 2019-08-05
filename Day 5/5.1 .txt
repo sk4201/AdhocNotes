@@ -1,0 +1,63 @@
+Unix is a type of linux.
+C language is used to develop most of the part of a kernel
+
+there are 3 popular kernels:-
+NT
+Linux
+Darwin
+
+linux has 2 type of editor
+GUI - Notepad(Windows), gedit(Linux)
+CLI - Vi, Vim(Advanced version of Vi; Mostly used Worldwide), Nano, Pico
+
+--------------------------------------------------------------------------------------------------------------------
+[20% marks in Redhat Certication Exam] Linux File System Security:-
+Data is stored whether in:-
+Folder or Directory
+File
+
+A normal user uses generally 3 operation for files or folders:-
+Read				=> r		
+Write				=> w
+Execute = chmod -x /usr/bin/firefox	=> x; chmod= Change Mode; deny the execution permission of firefox; will not open via graphical or by terminal
+
+inode table (Same as index table)	-> includes every file and folder information including permissions
+ls -i /abc.txt			-> inode no.
+ls -il /abc.txt			-> inode details
+ls -ld /etc				-> for directory permission details
+ls -ldi /etc				-> for directory permission details with inode no.
+
+Changing Permissions:-
+chmod [u=Owner/User; g=group; o=other]
+for adding permission do '+'
+for remove permission do '-'
+
+Ex:- chmod o-r /test			-> o=other; '-' = permission remove; r=read
+chmod u+rwx,g+r,o+rx /test		-> gives multiple permission to different
+
+mkdir /project
+groupadd tech
+chgrp tech /project
+
+useradd -G tech priti
+useradd harry
+useradd jack
+usermod -G tech harry
+usermod -G tech jack
+
+		Sticky Bit		-> Advance Permission -> when having same permission in a group but cannot change data of other user's data in same group
+chmod +t /project			-> t = Sticky Bit; for turning on the sticky bit
+
+there is a folder in Linux in which everyone has permission to do anything but cannot change any other user work	-> /tmp
+
+ls -l /project			-> shows the details of all files with their permission and user and groupname
+
+		Set Group ID	-> shows the name of the group in ' ls -l /project '
+chmod g+s /project		-> g=group; s=setgroupid
+
+
+su - jack				-> switch user to jack and goes to /home/jack directory
+su jack					-> switch user to jack and goes to current directory
+
+sudo -i					-> switch to root and goes to root directory
+sudo -s					-> switch to root and be on the current directory

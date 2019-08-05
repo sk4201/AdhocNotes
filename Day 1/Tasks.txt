@@ -1,0 +1,13 @@
+Day 1
+1.1
+[DONE] Change Monitor from Desktop to Download
+Error should be shown only for first command in terminal (30 Day Challenge)
+Concept of Recycle Bin
+Create 5GB file and copy it 3 times with same size but it only will take 5GB
+Why days are missing in september(9) in Year 1752
+
+1.2
+Make 1000 folders in Windows at one time
+check what is the location of the variable is stored in RAM and how much memory is it taking in RAM
+check whether "None" is taking any memory or not
+

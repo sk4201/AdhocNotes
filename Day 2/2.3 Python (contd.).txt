@@ -1,0 +1,45 @@
+String:-
+Storage
+length			=> len(a)		=> length of 'a' string
+search			=> s in z		=> s= data; z= variable
+
+tuple(immutable):- storage of fixed length
+=> t=(3,6,7,8)
+type(t)			=> <class 'tuple'>
+t[0]			=> 3
+t[0:3]			=> (3,6,7)
+len(t)			=> 4
+t1=(4,7.3,"hello")	
+type(t1)			=> <class 'tuple'>
+
+Python cannot process more than 10 GB data at one time
+
+=> tuple()			=> () Format
+list()			=> [] Format
+dict()			=> {}Format
+
+
+
+In list, data can add more 	=> x.append(800)		=> 800 will be added in last of x list
+			x.insert(0,"adhoc")		=> adhoc will be added at 0 position in x list
+
+			x.remove(3)		=> 3 data will be removed, it is not by position
+			x.pop(-1)			=> -1 position data will be removed
+			
+			x[0]=9456			=> 9456 will be replaced at 0 position
+			x.append(t)		=> t=tuple; tuple can be added in list
+			x.append([5,9])		=> list can be added in list
+
+			t3=(44,'hii',x)		=> (44, 'hii' , [9456, 777, 66, 88, 'hello', (3,6,7,8), [5,9]])
+			t3[-1][-1][-1]		=> 9
+			del t3			=> delete t3
+
+Dictionary:- just like associative array in PHP
+			d.keys()			=> shows the keys name
+			d.values			=> show the values name
+
+Set():-			reduce duplicacy and gives unique values
+tr=(3,6,3,7,3,9)
+set(tr)			=>
+
+

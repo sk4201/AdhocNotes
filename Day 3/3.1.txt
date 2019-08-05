@@ -1,0 +1,65 @@
+=> cat /etc/os-release		-> shows the details of OS
+PATH=/root			-> sets the path to /root
+
+
+[Imp. of Redhat EXAM] Input Output Redirection => Output will be shown to another place whether email, etc
+Input => User
+
+Output:-
+File
+RAM
+Email
+Printer
+Another System
+Whatsapp
+
+=> rm -rvf *				-> delete all
+=> date >ok.txt			-> saves the output in ok.txt file; '>' means always do overwrite(replace); always put command output if it is error free
+=> python a.py >hello.txt		-> copies the data of a.py file into hello.txt
+=> date >>hello.txt			-> new data will be append (added) after previous data; '>>' means always do append; always put command output if it is error free
+for putting command which has error then:-
+=> dateee 2>hello.txt			-> puts the error output in hello.txt
+=> date 2>hello.txt			-> shows the output at same time same as date
+
+
+In every programming language, exit code is created after executing the command
+if exit code is 0, then it is success and if it is non-zero, then it is failure
+=> echo $?			-> for checking exit code
+=> &>				-> save exit code with working of '>'
+=> &>>				-> save exit code with working of '>>'
+
+
+Python use 'sh' Shell in Linux
+
+
+=> wc -l hello.txt			-> wc= Word Count; l=Line
+=> wc -w hello.txt			-> w=
+=> wc -c hello.txt			-> c=
+
+=> grep hello hello.txt		-> grep=general regular exception pattern; search hello in hello.txt and prints the whole line in which hello is found
+=> grep -i hello hello.txt		-> i= disables case sensitive and shows both lower and upper case
+=> grep -w hello hello.txt		-> w= only prints hello in which hello is individual word
+=> grep -v hello hello.txt		-> v= except hello, prints everything
+
+RAM:-
+=> cal  |   wc -l			-> it saves the file in RAM and it is showing the no. of lines in cal
+=> cal  |  date			-> it will show the date output because it is on right hand side
+=> wc				-> takes input from user and then gives no. of lines, word count, and character count
+=> cal  |  grep Tu			-> print only Tu line in cal
+=> cal  |  grep 1  |  grep -i june		-> prints only 1 included line and june included line case insensitive
+=> cal  |  head  -3			-> print only first 3 line of cal
+=> cal  |  tail  -3			-> print only last 3 line of cal
+=> cal  |  head  -4  |  tail  -1		-> print only last line of first 4 lines of cal
+
+
+=> cal  |  mail -s  "linux class"  ashutoshh@linux.com		-> s=subject ; ashutoshh@linux.com=Reciever's mail address
+
+=> nc
+
+=>festival				-> a text to speech system
+
+
+
+
+
+

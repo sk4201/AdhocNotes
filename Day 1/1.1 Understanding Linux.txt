@@ -1,0 +1,76 @@
+Adhoc Classes
+
+Class 1
+
+Kernal is a software component which can communicate between hardware and the application software.
+OS is combination of 3 components :- Software, Interpreter, Kernel.
+
+Linux is a Kernel.
+Kernels:-
+Windows :- NT - .exe -> Windows 7,8,10
+Linux :- Linux -> S/W - .rpm - Redhat, .deb(Debian) - Ubuntu, Mint
+Mac :- Darwin - .dmg -> OSX, SNOWL
+
+=>mkdir adhoc{1..50} 	   	-> make 50 folders name adhoc1, adhoc2,...
+
+=>for((i=0;i>20;i++));
+do
+mkdir adhoc$i;
+done
+
+=>rmdir adhoc{1..50}		-> just replace mk to rm for remove
+
+Diff. b/w Windows and Linux:-
+
+Windows
+
+Admin
+Notepad
+CMD
+IE
+exe
+C:\users\Adhoc
+
+Linux
+
+root
+gedit
+Terminal
+Firefox
+rpm
+/home/Adhoc
+
+=>useradd jack			->  make a seperate user account in linux
+
+/root				-> Admin folder for linux	[Directory Structure]
+
+
+=>history				-> show history of commands
+=>touch				-> create a file
+=>pinky
+
+=> rm ok{1..5}			-> remove files
+=> rm -f ok{1..5}			-> remove files forcefully i.e., without permission
+=> rm -f -v ok{1..5}	or rm -fv ok{1..5}	-> remove files forcefully and visually in terminal
+
+=>whoami			-> gives the user name
+=>pwd				-> gives the directory path
+
+=>date +%Y			-> gives the year
+date +%A				-> gives the day full name 
+date +%a				-> gives the day short name
+date +%T				-> gives the time
+date --help				-> gives the help section
+
+=>cal				-> gives the Gregorian calendar
+cal 2019				-> gives the calendar of 2019
+cal 1  2019			-> gives january 2019 calendar
+cal 9  1752			-> gives Sep 1752 Calendar
+cal -j				-> shows  the Julian calendar
+
+=>bc				-> Calculator
+
+=>ls				-> list view of files and folders
+ls -F				-> shows folder with forward Slash and files
+
+

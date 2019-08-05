@@ -1,0 +1,36 @@
+There are two types of storage:-
+Primary
+Secondary
+
+In HDD, there is no
+Partition Table decide how many partition are to created 
+There are 2 types of Partition Tbale:-
+MBR (Master Boot Record)
+GPT (GUID(Globally Unique Identifier) Partition Table)
+
+[In Exam] MBR:-
+Maximum 2TB is seen or used, more than that it cannot access it
+Maximum Memory of parrtition information is 64 bytes.
+MBR can have maximum 4 Primary Partition
+It can have only 1 Extended Partition and then in this it can have 60 Logical Partition
+Overall 3P+1E(60L) = 64 Partition but 63 are operatable (excluding Extended)
+
+GPT:-
+Maximum 8EB is seen or used
+No Logic Extended Partition
+By default we can create 128 Primary Partition but it is changeable
+
+Primary Partition:-
+Primary Partition includes all the OS files
+
+=> lsblk                -> command for disk details
+
+fdisk -lsblk            -> l= list
+
+ec2 = Elastic Compute Cloud
+AMI = Image
+ECU = CPU
+EBS = Storage Cloud
+
+
+

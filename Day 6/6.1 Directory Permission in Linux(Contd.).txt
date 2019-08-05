@@ -1,0 +1,40 @@
+Permission is all about user and target
+
+chown code /test            -> changing the owner of test directory
+
+chmod u+r,g-r,o-x           -> giving or removing permission from owner,group and others
+
+
+Octal Number System:-
+
+r - 4
+w - 2
+x - 1
+none - 0
+
+chmod 421 /check
+
+[4] first = owner
+[2] Second = group
+[1] third = others
+
+chmod 754 /check            -> 7= 4+2+1[Owner](rwx); 5= 4+1[Group](rx); 4= 4[others](r)
+chmod 000 /check            -> removing all permission from owner, group and others
+
+format of chmod:-
+chmod (special permission) (Owner) (group) (others)
+
+chmod 0777 /check           -> 0= no special permission
+chmod 1777 /check           -> 1= sticky bit applied
+chmod 2777 /check           -> 2= SGID applied
+chmod 3777 /check           -> 3= [2+1] Sticky bit and  SGID both applied
+
+ACL = Access Control List = giving any specific user giving different permission in a group
+
+setfacl -m u:u4:rx /check   -> setfacl= set file access control list; m= modify; u= user; u4= username; rx=permission; /check= directory name
+setfacl -m g:tech:rx /check -> for group
+setfacl /check              -> to check all the permission of all the users
+setfacl -x u:u4 /check      -> x= removing the permissions
+getfacl /check              -> to see all the permissions
+
+umask is a factor  which decide the by default permissions of a file or a directory

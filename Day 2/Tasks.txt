@@ -1,0 +1,8 @@
+Day 2
+2.1
+show the date and time in history in linux
+how to update history if entered manually in /home/adhoc/.bash_history (without reboot & logout)
+
+2.2
+install vlc in windows using any programming language
+use case of tuple

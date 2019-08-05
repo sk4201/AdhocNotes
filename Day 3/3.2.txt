@@ -1,0 +1,14 @@
+SCM=Source Code Management => for making it remember the code date wise and time wise
+
+Modules which can connect Python to OS:-
+Commands
+OS
+Subprocess		->[Python] =>subprocess.getoutput('vlc')		-> Opens everything which is in the OS; to connect OS level application
+
+=> yes hello		-> prints hello until you press ctrl+c
+
+=> ls -lh hii.txt		-> shows the size of hii.txt
+
+=> tar -cvf new1.tar hii.txt	-> creates a .tar file and puts hii.txt
+
+=> tar -tvf new1.tar		-> shows what files are present in .tar file

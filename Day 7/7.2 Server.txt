@@ -1,0 +1,32 @@
+Server is Service Provider
+Client is Service Reciever which is after requesting
+Ex:- Email Client -> Gmail
+
+Apache is a free server and also Open Source
+
+apache httpd    -> Every OS
+apache apache2  -> only ubuntu type OS
+
+XAMPP WAMP LAMP
+NGINX -> IRCTC Website Server
+IIS (Most Powerfull Server) -> for windows
+TOMCAT -> Most powerfull server for JAVA and PHP pages
+
+
+
+In linux, to deploy any server:-
+
+
+Step 1: install s/w related to that server
+=> rpm -q httpd             -> q=query; for checking if the packages are available or not for httpd
+
+Step 2: configure that server (do required changes)
+=> rpm -qc httpd            -> c=configure; 
+
+Step 3: start Service
+systemctl start httpd       -> starting the service
+systemctl service httpd     -> for checkingthe status
+
+Important: /var/www/html (Document root for apache)
+
+systemctl disable --now firewalld   -> disable the firewall of OS   

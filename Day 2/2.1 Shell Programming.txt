@@ -1,0 +1,76 @@
+=>uname			=> gives the kernel name
+uname -r			=> gives the kernel version
+
+Version 1:-
+Shell is an interpreter which takes input/data from application or software and pass it to kernel(Machine Language) then kernel pass it to hardware
+then hardware pass it to kernel and kernel pass it to shell and shell pass it to software or application in which it shows the output.
+
+Latest Version:-
+Firstly data goes to shell then it goes to HDD then it responds to shell which have BASH.
+
+=>strace date		=> s=system call, trace=trace [ prefix of any command]
+
+Important shells:-
+BASH -> Redhat
+SH
+TCSH
+CSH
+ZSH
+
+=>cd /etc			=> extra configuration [every OS files]
+
+=>cat /etc/shells		=> cat->file viewer
+
+=>sh			=> temporary commands for specific shell
+
+=>echo $SHELL		=> pre-defined variable for showing the current shell
+echo $USER		=> shows the username
+echo $LANG		=> shows the language of system
+echo $HISTSIZE		=> shows the size of history
+echo $HISTFILE		=> shows the path of history
+
+If the file name is starting from (.) means it is hidden
+=>ls -a			=> shows all the files and folders including hidden files
+and for graphical view of hidden files press ctrl+h
+
+Shells features:-
+History			=> by default it gives most latest 1000 commands history but it can be change; it does'nt show history of another terminal until the whole terminal  				     window is closed; for repeating the command, just type !35 i.e., 35th no. of command
+Variables
+Alias			=> alias  d='date'		=> shows the same date as 'date' command
+Script			=> script			=> records the output of the command in a file which is stored in /home/adhoc/typescript; for end => exit
+			=> script -t 2>shellclass.txt	=> and for LIVE output(time basis); for end =>exit
+			=> scriptreplay shellclass.txt	=> replay the LIVE output in terminal
+Shell Scripting/Programming	=> for using the script file in another system
+
+Bash has echo and for variables($[prefix])
+
+=>PS1="NAMAN:--->>  "	=> temporary change the name
+=>gnome-terminal		=> opens the new terminal window
+=>env			=> shows all the programs which are pre-defined in OS
+for changing the settings of OS permanently	=> gedit /home/adhoc/.bashrc	=> And write the same commands from last line. And it applies from new terminal window
+					for applying in same terminal window => source /home/adhoc/.bashrc
+
+=>tput bold		=> bold the whole text
+=>tput setab 4		=> sets the background color of terminal
+
+=> adhoc()		=> creates a function and after that we can define it
+{
+date
+pwd
+whoami
+cal
+}
+
+=> firefox www.google.com www.fb.com		=> open both website in tabs in firefox
+
+=> touch /home/adhoc/Templates/createfile	=> gives the opportunity of creating file in desktop using right click from mouse then in New Document
+
+for accessing a no. of commands at same time just create a .sh file and type the commands in that file
+for accessing the .sh file 	=> bash[prefix] /home/adhoc/Desktop/createfile.sh
+=>mv /home/adhoc/Desktop/naman  /home/adhoc/Desktop/jain	=> it renames or move the file
+
+
+
+
+
+

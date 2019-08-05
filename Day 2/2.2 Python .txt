@@ -1,0 +1,45 @@
+Installers:-
+Windows		-> MSI
+Redhat		-> yum/ DNF(RHEL8)
+Ubuntu		-> apt/ apt-get
+MAC		-> Brew
+
+=> apt instal s/w_name	=> in ubuntu for installing a software
+=> bb			=> Matrix in ubuntu
+
+Installers of library:-
+Python		-> pip
+GO		-> fmt
+Ruby		-> gem
+
+=> yum install s/w_name	=> install software in Redhat
+
+=> su - root		=> su -> Switch user; gives root access
+
+
+Python3:-
+Interpereter	=> BASH
+File
+IDE
+
+Deadcode		-> code which are only defined but not in use in whole program ; Vulture ; Firefly [shows the no. of codes which are not in use]
+
+=> .		-> current location
+
+=> chmod +x day2.py	=> change the permission for execution of file to yes
+
+#!/usr/bin/python3		=> comes in first line of python code for opening the .py file by OS without using python3 prefix
+
+#!		-> She Bang/ Hash Bang
+
+=>which  date		=> shows the directory of date
+which python3		=> shows the directory of python3
+whereis date		=> shows all the paths of date
+
+99% times Libraries/Modules are used in Python
+
+import time		=> [Python] Time library
+time.sleep(3)		=> [Python] 3 seconds delay of next code
+
+
+

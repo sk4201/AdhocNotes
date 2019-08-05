@@ -1,0 +1,29 @@
+[Ony accessible in root]
+User add:-
+=>useradd harry
+passwd harry
+123
+123
+
+passwd harry			-> change the password
+
+User Delete:-
+userdel harry			-> Delete user account but keep its files and history
+userdel -r harry		-> Delete user account and also delete its files and history
+su - harry				-> switch user to harry
+
+user add in UBUNTU:-
+=>adduser harry
+
+User Permissions:-
+if userID is 0, you have all permission of system
+if userID is 500, you have admin permission of system
+if userID is 1000-60000, you have normal user permission of system
+if userID is 60001-65535, system user
+if userID is 1-999, system
+
+/etc/passwd -> every users permission is given here
+
+=> id -u				-> tell the userID of current logged in user
+for making any user root, change it's userID to 0 from /etc/passwd
+
